@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --line: rgba(26, 29, 23, 0.08);
+}
+
+html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+body {
+  font-family: var(--font-body);
+  background-color: #E3E6DC;
+  background-image: var(--grid-paper);
+  background-size: 32px 32px;
+  color: #1A1D17;
+}
+
+:focus-visible {
+  outline: 2px solid #2D4A2D;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+.seam { border-top: 1px dashed rgba(26, 29, 23, 0.15); }
+
+.specimen {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+}
